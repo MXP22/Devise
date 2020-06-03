@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.1" package="com.Devices2.Devices23" android:installLocation="auto" android:versionCode="4">
+  <uses-sdk android:targetSdkVersion="28" android:minSdkVersion="11" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <application android:allowBackup="true" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/MyTheme" android:name="android.app.Application">
+    <activity android:label="Lencher" android:name="md5f0a98acb77994ccc244ffa86e5043aa9.Lencher" />
+    <activity android:label="ListviewDRVISE" android:name="md5f0a98acb77994ccc244ffa86e5043aa9.ListviewDRVISE" />
+    <activity android:icon="@drawable/sanstitre" android:label="@string/app_name" android:theme="@style/MyTheme" android:name="md5f0a98acb77994ccc244ffa86e5043aa9.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.Devices2.Devices23.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+    <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+</manifest>
